@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import { FiltersProvider } from './contexts/filtersContext';
+import { ProductsProvider } from './contexts/productsContext';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ProductsProvider>
+      <FiltersProvider>
+        <App />
+      </FiltersProvider>
+    </ProductsProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

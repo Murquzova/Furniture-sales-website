@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  justify-content: center;
+  .details {
+    width: 90%;
+    padding: 30px 0;
+    .backtoproducts {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      button {
+        padding: 7px 10px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        background: #ab7a5f;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 17px;
+        letter-spacing: 0.2rem;
+        font-weight: 100;
+      }
+    }
+    .detal {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      .item-image {
+        width: 50%;
+
+        .active {
+          width: 100%;
+          border-radius: 5px;
+          height: 450px;
+        }
+        .mini-img {
+          width: 100%;
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          .neactive {
+            width: 19%;
+            border-radius: 5px;
+            height: 80px;
+          }
+          .act {
+            width: 19%;
+            border-radius: 5px;
+            height: 80px;
+            border: 2px solid #ab7a5f;
+          }
+        }
+      }
+      .item-info {
+        width: 50%;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2 {
+          color: #102a42;
+          text-transform: capitalize;
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+        p {
+          color: #ab7a5f;
+          font-weight: 600;
+          font-size: 22px;
+        }
+        span {
+          line-height: 2;
+        }
+        .colors-main {
+          display: flex;
+          .color {
+            width: 25px;
+            margin-left: 10px;
+            height: 25px;
+            border-radius: 50%;
+          }
+        }
+        h5 {
+          margin-right: 20px;
+          color: #324d67;
+          font-size: 16px;
+          span {
+            font-weight: 400;
+            color: #182939;
+            text-transform: capitalize;
+          }
+        }
+        button {
+          width: 180px;
+          margin-right: 10px;
+          padding: 7px 16px;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          background: #ab7a5f;
+          border-radius: 5px;
+          color: #fff;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.cartmainpage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  .maintable {
+    width: 80%;
+    table {
+      width: 100%;
+      text-align: center;
+      thead {
+        tr {
+          th {
+            padding: 20px !important ;
+          }
+        }
+      }
+      tbody {
+        tr {
+          border-top: 1px solid rgba(0, 0, 0, 0.088);
+          td {
+            padding: 10px !important ;
+            img {
+              width: 100px;
+              height: 70px;
+              border-radius: 5px;
+            }
+            div {
+              .plusminus {
+                background-color: #eaded7;
+                padding: 5px;
+                font-size: 10px;
+                width: 24px;
+                cursor: pointer;
+                height: 24px;
+                border-radius: 50%;
+              }
+              span {
+                margin: 0 7px;
+              }
+            }
+            .trash {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
